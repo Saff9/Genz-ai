@@ -22,9 +22,10 @@ const ChatInput = ({ onSendMessage, isLoading }) => {
           placeholder="Message GenZAI..."
           disabled={isLoading}
         />
+        {/* FIX: Changed the closing tag from </g-button> to </button> */}
         <button type="submit" className="send-button" disabled={isLoading}>
           {isLoading ? '...' : 'Send'}
-        </g-button>
+        </button> 
       </form>
     </div>
   );
